@@ -1,0 +1,25 @@
+<!--pages/poetry/five.wxml-->
+<scroll-view scroll-y class="scrollPage">
+    <cu-custom bgColor="bg-cyan.light" isBack="{{true}}">
+        <view slot="backText">返回</view>
+        <view slot="content">五代词</view>
+    </cu-custom>
+    <view class="cu-card article">
+        <view class="cu-item" wx:for="{{poetryList}}" wx:key="index">
+            <view class="title text-center">
+                <view class="text-lg">{{item.title}}</view>
+            </view>
+            <view class="text-grep text-sm text-center">[{{item.dynasty}}] {{item.author}}</view>
+            <view class="content">
+                <view class="desc">
+                    <view class="text-content">
+                        {{item.content}}
+                    </view>
+                    <!-- <view>
+                        <view class="cu-tag bg-red light sm round">{{item.tag}}</view>
+                    </view> -->
+                </view>
+            </view>
+        </view>
+    </view>
+</scroll-view>

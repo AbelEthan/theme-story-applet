@@ -1,0 +1,14 @@
+<!--pages/poetry/poetry.wxml-->
+<scroll-view scroll-y class="scrollPage">
+    <cu-custom>
+        <view slot="content">古诗词</view>
+    </cu-custom>
+    <view class="nav-list">
+        <navigator open-type="navigate" hover-class="none" url="/pages/poetry/{{item.name}}/{{item.name}}" class="nav-li bg-{{item.color}}" wx:for="{{elements}}" wx:key="index">
+            <view class="nav-title" url="'/pages/poetry/{{item.name}}/{{item.name}}">{{item.title}}</view>
+            <view class="nav-name">{{item.name}}</view>
+            <text class='cuIcon-{{item.icon}}'></text>
+        </navigator>
+    </view>
+    <view class="cu-tabbar-height"></view>
+</scroll-view>

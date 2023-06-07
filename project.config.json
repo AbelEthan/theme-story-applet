@@ -1,0 +1,51 @@
+{
+    "description": "项目配置文件",
+    "packOptions": {
+        "ignore": [],
+        "include": []
+    },
+    "setting": {
+        "urlCheck": true,
+        "es6": true,
+        "postcss": true,
+        "minified": true,
+        "newFeature": true,
+        "babelSetting": {
+            "ignore": [],
+            "disablePlugins": [],
+            "outputPath": ""
+        },
+        "condition": false
+    },
+    "compileType": "miniprogram",
+    "libVersion": "2.19.4",
+    "appid": "wxefd322904e8fe89d",
+    "projectname": "theme-story",
+    "simulatorType": "wechat",
+    "simulatorPluginLibVersion": {},
+    "condition": {
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "-----古诗词-首页-----",
+                    "pathName": "pages/poetry/home/home",
+                    "query": ""
+                },
+                {
+                    "name": "1.1 古诗词-五代词",
+                    "pathName": "pages/poetry/five/five",
+                    "query": ""
+                },
+                {
+                    "name": "-----关于-首页-----",
+                    "pathName": "pages/about/home/home",
+                    "query": ""
+                }
+            ]
+        }
+    },
+    "editorSetting": {
+        "tabIndent": "insertSpaces",
+        "tabSize": 4
+    }
+}

@@ -1,0 +1,16 @@
+<poetry wx:if="{{PageCur=='poetry'}}"></poetry>
+<about wx:if="{{PageCur=='about'}}"></about>
+<view class="cu-bar tabbar shadow foot">
+    <view class="action" bindtap="NavChange" data-cur="poetry">
+        <view class='cuIcon-cu-image'>
+            <image src="/images/tabbar/poetry{{PageCur=='poetry'?'_cur':''}}.png"></image>
+        </view>
+        <view class="{{PageCur=='poetry'?'text-green':'text-gray'}}">古诗词</view>
+    </view>
+    <view class="action" bindtap="NavChange" data-cur="about">
+        <view class='cuIcon-cu-image'>
+            <image src="/images/tabbar/about{{PageCur=='about'?'_cur':''}}.png"></image>
+        </view>
+        <view class="{{PageCur=='about'?'text-green':'text-gray'}}">关于</view>
+    </view>
+</view>
