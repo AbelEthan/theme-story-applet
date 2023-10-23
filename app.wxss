@@ -3,10 +3,10 @@
 
 .scrollPage {
   height: 100vh;
-  background-image: url(https://cdn.jsdelivr.net/gh/abelethan/cdn/poetry/inkWashBg.png);
+  /* background-image: url(https://cdn.jsdelivr.net/gh/abelethan/cdn/poetry/inkWashBg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 
 .nav-list {

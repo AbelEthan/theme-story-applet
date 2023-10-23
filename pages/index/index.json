@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "poetry": "/pages/poetry/home/home",
+    "textbook": "/pages/textbook/home/home",
     "about": "/pages/about/home/home"
   }
 }

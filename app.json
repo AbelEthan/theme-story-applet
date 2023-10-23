@@ -3,6 +3,7 @@
         "pages/index/index",
         "pages/poetry/home/home",
         "pages/poetry/five/five",
+        "pages/textbook/home/home",
         "pages/about/home/home"
     ],
     "window": {

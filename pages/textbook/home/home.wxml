@@ -1,0 +1,32 @@
+<!--pages/textbook/home/home.wxml-->
+<scroll-view scroll-y class="scrollPage">
+    <cu-custom>
+        <view slot="content">古诗库</view>
+    </cu-custom>
+    <view class="VerticalBox">
+        <scroll-view class="VerticalNav nav" scroll-y scroll-with-animation scroll-top style="height:calc(100vh - 375rpx)">
+            <view class="cu-item {{index==TabCur?'text-green cur':''}}" wx:for="{{list}}" wx:key bindtap='tabSelect' data-id="{{index}}">
+                {{item.typeValue}}
+            </view>
+        </scroll-view>
+        <scroll-view class="VerticalMain" scroll-y scroll-with-animation style="height:calc(100vh - 375rpx)" scroll-into-view="main-{{MainCur}}" bindscroll="VerticalMain">
+            <view class="padding-top padding-lr" wx:for="{{list}}" wx:key id="main-{{index}}">
+                <view class='cu-bar solid-bottom bg-white'>
+                    <view class='action'>
+                        <text class='cuIcon-title text-green'></text> {{item.typeValue}}
+                    </view>
+                </view>
+                <view class="cu-list grid col-{{gridCol}} {{gridBorder?'':'no-border'}}">
+                    <view class="cu-item" wx:for="{{item.elements}}" wx:for-item="element" wx:for-index="idx" wx:key="idx" wx:if="{{idx<gridCol*2}}">
+                        <view class="cuIcon-{{element.icon}} text-{{element.color}}">
+                            <view class="cu-tag badge" wx:if="{{element.badge!=0}}">
+                                <block wx:if="{{element.badge!=1}}">{{element.badge>99?"99+":element.badge}}</block>
+                            </view>
+                        </view>
+                        <text>{{element.name}}</text>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</scroll-view>
